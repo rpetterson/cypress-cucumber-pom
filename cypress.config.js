@@ -30,5 +30,7 @@ module.exports = defineConfig({
       allureReuseAfterSpec: true,
     },
     projectId: "jim6ek",
+    "viewportWidth": 1920,
+    "viewportHeight": 1080
   },
 });
