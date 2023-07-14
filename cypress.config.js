@@ -29,5 +29,6 @@ module.exports = defineConfig({
     env: {
       allureReuseAfterSpec: true,
     },
+    projectId: "jim6ek",
   },
 });
