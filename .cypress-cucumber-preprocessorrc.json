@@ -11,6 +11,9 @@
   "html": {
     "enabled": false
   },
+  "cucumber": {
+    "tags": "not @ignore"
+  },
   "stepDefinitions": [
     "[filepath]/**/*.{js,ts}",
     "[filepath].{js,ts}",
