@@ -29,7 +29,7 @@ module.exports = defineConfig({
     env: {
       allureReuseAfterSpec: true,
     },
-    projectId: "jim6ek",
+    projectId: "wd92dz",
     "viewportWidth": 1920,
     "viewportHeight": 1080
   },

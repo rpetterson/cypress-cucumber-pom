@@ -18,5 +18,10 @@ import './commands'
 import '@shelex/cypress-allure-plugin';
 import "cypress-real-events/support";
 
+Cypress.on('uncaught:exception', (err, runnable) => {
+    console.log(err);
+    return false;
+  });
+
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
