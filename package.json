@@ -7,7 +7,8 @@
     "cypress:open": "cypress open",
     "cypress:runner": "cypress open --e2e --browser chrome",
     "cypress:execution": "cypress run --spec cypress/e2e/features/* --browser chrome --headed",
-    "cypressDashoard:execution": "cypress run --spec cypress/e2e/features/* --browser chrome --headed --record --key 726825e3-a437-456d-a7b4-a53115183cbc",
+    "cypressDashoard:execution": "cypress run --spec cypress/e2e/features/* --browser chrome --headed --record --key 7e38b0ef-9bc5-4307-879d-ba8e9a1fc272",
+    "cypress-dashboard-parallel": "cypress run --record --key a25d4066-9b7c-4e5f-b900-222152bb57b2 --parallel --spec cypress/e2e/features/* --browser chrome",
     "cypress:execution-tags": "cypress run --env tags=@mobile",
     "cypress:execution-allure": "cypress run --env allure=true",
     "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots || true",
@@ -23,13 +24,11 @@
     "@badeball/cypress-cucumber-preprocessor": "^15.1.5",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
     "@shelex/cypress-allure-plugin": "^2.34.0",
+    "@testing-library/cypress": "^9.0.0",
     "cypress": "^12.17.1",
     "cypress-axe": "^1.4.0",
     "cypress-real-events": "^1.8.1",
     "esbuild": "^0.16.4",
     "multiple-cucumber-html-reporter": "^3.0.1"
-  },
-  "dependencies": {
-    "cypress-cucumber-preprocessor": "^4.3.1"
   }
 }
