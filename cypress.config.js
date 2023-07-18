@@ -29,8 +29,8 @@ module.exports = defineConfig({
     env: {
       allureReuseAfterSpec: true,
     },
-    //projectId: "wd92dz",
-    projectId: "9yaff9",
+    projectId: "wd92dz",
+   // projectId: "9yaff9",
     "viewportWidth": 1920,
     "viewportHeight": 1080
   },
