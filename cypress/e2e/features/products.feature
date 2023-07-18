@@ -1,5 +1,4 @@
 Feature: Product page
-
     Feature User can view and buy products
 
     Background:
@@ -10,3 +9,6 @@ Feature: Product page
         Then the url will contains the inventory subdirectory
         When A User selects the most expensive product and adds to the cart
       #  Then the cart wil be updated
+
+
+
