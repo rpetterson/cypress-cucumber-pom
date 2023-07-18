@@ -24,6 +24,7 @@
     "@badeball/cypress-cucumber-preprocessor": "^15.1.5",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
     "@shelex/cypress-allure-plugin": "^2.34.0",
+    "@testing-library/cypress": "^9.0.0",
     "cypress": "^12.17.1",
     "cypress-axe": "^1.4.0",
     "cypress-real-events": "^1.8.1",
