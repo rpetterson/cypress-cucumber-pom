@@ -8,7 +8,7 @@
     "cypress:runner": "cypress open --e2e --browser chrome",
     "cypress:execution": "cypress run --spec cypress/e2e/features/* --browser chrome --headed",
     "cypressDashoard:execution": "cypress run --spec cypress/e2e/features/* --browser chrome --headed --record --key 726825e3-a437-456d-a7b4-a53115183cbc",
-    "cypress-dashboard-parallel": "cypress run --record --key a25d4066-9b7c-4e5f-b900-222152bb57b2 --parallel --spec cypress/e2e/features/parallel-test/* --browser chrome",
+    "cypress-dashboard-parallel": "cypress run --record --key a25d4066-9b7c-4e5f-b900-222152bb57b2 --parallel --spec cypress/e2e/features/* --browser chrome",
     "cypress:execution-tags": "cypress run --env tags=@mobile",
     "cypress:execution-allure": "cypress run --env allure=true",
     "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots || true",
