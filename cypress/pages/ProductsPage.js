@@ -27,5 +27,5 @@ buyMostExpensiveProduct(){
     cy.get('#shopping_cart_container > a > span').should('contain', '1');
   }
   
-   
+}  
   export const productsPage = new ProductsPage();
