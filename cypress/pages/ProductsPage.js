@@ -28,5 +28,6 @@ buyMostExpensiveProduct(){
   }
   
 }  
+
   export const productsPage = new ProductsPage();
 
