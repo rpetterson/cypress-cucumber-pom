@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1689855672116' stop='1689855677900'>
+    <name>Accessibility tests on the page</name>
+    <title>Accessibility tests on the page</title>
+    <test-cases>
+        <test-case start='1689855672134' status='failed' stop='1689855677894'>
+            <name>John Lewis Home Page should have no accessibility violations</name>
+            <title>John Lewis Home Page should have no accessibility violations</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>4 accessibility violations were detected: expected 4 to equal 0</message>
+                <stack-trace>AssertionError: 4 accessibility violations were detected: expected 4 to equal 0
+                    at Context.eval (https://www.johnlewis.com/__cypress/tests?p=cypress\e2e\features\accessibility.feature:14363:20)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

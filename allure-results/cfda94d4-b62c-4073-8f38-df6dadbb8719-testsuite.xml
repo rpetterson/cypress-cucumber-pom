@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1689855680548' stop='1689855685148'>
+    <name>Login page</name>
+    <title>Login page</title>
+    <test-cases>
+        <test-case start='1689855680888' status='passed' stop='1689855682704'>
+            <name>Success Login</name>
+            <title>Success Login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1689855682705' status='passed' stop='1689855683720'>
+            <name>Blocked Login</name>
+            <title>Blocked Login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1689855683722' status='passed' stop='1689855684397'>
+            <name>Incorrect Username Login</name>
+            <title>Incorrect Username Login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1689855684397' status='passed' stop='1689855685148'>
+            <name>Incorrect Password Login</name>
+            <title>Incorrect Password Login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

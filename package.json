@@ -8,7 +8,7 @@
     "cypress:runner": "cypress open --e2e --browser chrome",
     "cypress:execution": "cypress run --spec cypress/e2e/features/* --browser chrome --headed --reporter mocha-allure-reporter",
     "cypressDashoard:execution": "cypress run --spec cypress/e2e/features/* --browser chrome --headed --record --key 7e38b0ef-9bc5-4307-879d-ba8e9a1fc272",
-    "cypress-dashboard-parallel": "cypress run --record --key a25d4066-9b7c-4e5f-b900-222152bb57b2 --parallel --spec cypress/e2e/features/* --browser chrome",
+    "cypress-dashboard-parallel": "cypress run --record --key a25d4066-9b7c-4e5f-b900-222152bb57b2 --parallel --ci-build-id $BUILD_NUMBER --spec cypress/e2e/features/* --browser chrome",
     "cypress:execution-tags": "cypress run --env tags=@mobile",
     "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report", 
     "test:allure": "npm run cy:clientLogin && npm run report:allure"
