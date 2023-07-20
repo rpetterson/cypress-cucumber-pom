@@ -14,7 +14,7 @@ async function setupNodeEvents(on, config) {
       plugins: [createEsbuildPlugin.default(config)],
     })
   );
-  allureWriter(on, config);
+ // allureWriter(on, config);
 
   // Make sure to return the config object as it might have been modified by the plugin.
   return config;
