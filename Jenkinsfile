@@ -25,7 +25,7 @@ pipeline {
     //The values for these user-specified parameters are made available to Pipeline steps via the params object, see
     //the Parameters, Declarative Pipeline for its specific usage.
     parameters {
-        string(name: 'SPEC', defaultValue: 'cypress/e2e/features/* --headed', description: 'Eg: cypress/e2e/features/*')
+        string(name: 'SPEC', defaultValue: 'cypress/e2e/features/* --headed --record --key 0e63fdc3-bb02-4598-affe-2611ed06999d', description: 'Eg: cypress/e2e/features/*')
         choice(name: 'BROWSER', choices: ['chrome', 'edge', 'firefox'], description: 'Pick the web browser you want to use to run your scripts')
     }
     
