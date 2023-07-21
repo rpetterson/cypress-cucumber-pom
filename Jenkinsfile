@@ -32,7 +32,8 @@ pipeline {
     //The options directive allows configuring Pipeline-specific options from within the Pipeline itself.
     //Pipeline provides a number of these options, such as buildDiscarder, but they may also be provided by
     //plugins, such as timestamps. Ex: retry on failure
-    ansiColor('xterm') {
+     options {
+        ansiColor('xterm')
     }
 
     //The stage directive goes in the stages section and should contain a steps section, an optional agent section, 
