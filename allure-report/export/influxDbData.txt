@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 launch_status failed=1 1689864999000000000
 launch_status broken=0 1689864999000000000
 launch_status passed=7 1689864999000000000
@@ -10,3 +11,17 @@ launch_time sum_duration=12872 1689864999000000000
 launch_problems product_defects=1 1689864999000000000
 launch_retries retries=48 1689864999000000000
 launch_retries run=8 1689864999000000000
+=======
+launch_status failed=2 1689929480000000000
+launch_status broken=0 1689929480000000000
+launch_status passed=6 1689929480000000000
+launch_status skipped=0 1689929480000000000
+launch_status unknown=0 1689929480000000000
+launch_time duration=27530 1689929480000000000
+launch_time min_duration=715 1689929480000000000
+launch_time max_duration=6096 1689929480000000000
+launch_time sum_duration=17992 1689929480000000000
+launch_problems product_defects=2 1689929480000000000
+launch_retries retries=56 1689929480000000000
+launch_retries run=8 1689929480000000000
+>>>>>>> Stashed changes
