@@ -32,8 +32,7 @@ pipeline {
     //The options directive allows configuring Pipeline-specific options from within the Pipeline itself.
     //Pipeline provides a number of these options, such as buildDiscarder, but they may also be provided by
     //plugins, such as timestamps. Ex: retry on failure
-    options {
-        ansiColor('xterm')
+    ansiColor('xterm') {
     }
 
     //The stage directive goes in the stages section and should contain a steps section, an optional agent section, 
@@ -76,7 +75,7 @@ pipeline {
                 message: "*${currentBuild.currentResult}:* Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} by ${BUILD_USER}\n Tests:${SPEC} executed at ${BROWSER} \n More info at: ${env.BUILD_URL}HTML_20Report/"
             
 
-            allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
+           publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
         }
     }
 }
