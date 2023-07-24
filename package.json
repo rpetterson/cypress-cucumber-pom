@@ -8,7 +8,7 @@
     "cypress:runner": "cypress open --e2e --browser chrome",
     "cypress:execution": "cypress run --spec cypress/e2e/features/* --browser chrome --headed --reporter mocha-allure-reporter",
     "cypressDashoard:execution": "cypress run --spec cypress/e2e/features/* --browser chrome --headed --record --key d5eeb416-f035-406e-8ad7-7d9bec4cc824",
-    "cypress-dashboard-parallel": "cypress run --record --key d5eeb416-f035-406e-8ad7-7d9bec4cc824 --parallel --spec cypress/e2e/features/* --browser chrome",
+    "cypress-dashboard-parallel": "cypress run --record --key d5eeb416-f035-406e-8ad7-7d9bec4cc824 --parallel --spec cypress/e2e/features/*.feature --browser chrome",
     "cypress-dashboard-parallel-no-push": "cypress run --record --key d5eeb416-f035-406e-8ad7-7d9bec4cc824 --parallel --spec cypress/e2e/features/* --browser chrome",
     "cy:run": "cypress run",
     "cy:parallel": "cypress-parallel -s cy:run -t 5 -d 'cypress/e2e/features/*' -a '\"--record --key d5eeb416-f035-406e-8ad7-7d9bec4cc824\"'",
