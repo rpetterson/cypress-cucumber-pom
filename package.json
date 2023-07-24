@@ -9,11 +9,12 @@
     "cypress:execution": "cypress run --spec cypress/e2e/features/* --browser chrome --headed --reporter mocha-allure-reporter",
     "cypressDashoard:execution": "cypress run --spec cypress/e2e/features/* --browser chrome --headed --record --key 0e63fdc3-bb02-4598-affe-2611ed06999d",
     "cypress-dashboard-parallel": "cypress run --record --key a25d4066-9b7c-4e5f-b900-222152bb57b2 --parallel --ci-build-id $BUILD_NUMBER --spec cypress/e2e/features/* --browser chrome",
-    "cypress-dashboard-parallel-no-push" :"cypress run --record --key a25d4066-9b7c-4e5f-b900-222152bb57b2 --parallel ",
+    "cypress-dashboard-parallel-no-push": "cypress run --record --key a25d4066-9b7c-4e5f-b900-222152bb57b2 --parallel ",
+    "cy:run": "cypress run",
+    "cy:parallel": "cypress-parallel -s cy:run -t 2 -d cypress/e2e/features/* -a --record --key d5eeb416-f035-406e-8ad7-7d9bec4cc824 --ci-build-id $BUILD_NUMBER",
     "cypress:execution-tags": "cypress run --env tags=@mobile",
-    "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report", 
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report",
     "test:allure": "npm run cy:clientLogin && npm run report:allure"
-
   },
   "keywords": [
     "cypress"
@@ -32,6 +33,7 @@
     "multiple-cucumber-html-reporter": "^3.0.1"
   },
   "dependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^18.0.1"
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.1",
+    "cypress-parallel": "^0.13.0"
   }
 }

@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 4,
+  "passes": 4,
+  "pending": 0,
+  "failures": 0,
+  "start": "2023-07-24T09:56:51.058Z",
+  "duration": 4393,
+  "file": "cypress\\e2e\\features\\login.feature"
+}

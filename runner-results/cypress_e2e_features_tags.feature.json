@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 2,
+  "passes": 2,
+  "pending": 0,
+  "failures": 0,
+  "start": "2023-07-24T09:57:05.531Z",
+  "duration": 1675,
+  "file": "cypress\\e2e\\features\\tags.feature"
+}
