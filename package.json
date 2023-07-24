@@ -23,7 +23,9 @@
   "author": "cucumber",
   "license": "ISC",
   "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.4",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "@faker-js/faker": "^7.6.0",
     "@shelex/cypress-allure-plugin": "^2.40.0",
     "@testing-library/cypress": "^8.0.7",
     "cypress": "^12.17.1",
