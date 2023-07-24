@@ -25,11 +25,10 @@ pipeline {
     //The values for these user-specified parameters are made available to Pipeline steps via the params object, see
     //the Parameters, Declarative Pipeline for its specific usage.
     parameters {
-        string(name: 'SPEC', defaultValue: 'cypress-parallel -s cy:run -t 5 -d cypress/e2e/features/* --headed -a '\"--record --key d5eeb416-f035-406e-8ad7-7d9bec4cc824\"'", description: 'Eg: cypress/e2e/features/*')
+        string(name: 'SPEC', defaultValue: "npx cy:parallel -s cy:run -t 2 -d 'cypress/e2e/features/*' -a '--record --key d5eeb416-f035-406e-8ad7-7d9bec4cc824'", description: 'Eg: cypress/e2e/features/*')
         choice(name: 'BROWSER', choices: ['chrome', 'edge', 'firefox'], description: 'Pick the web browser you want to use to run your scripts')
     }
-    'cypress-parallel -s cy:run -t 5 -d cypress/e2e/features/* -a '\"--record --key d5eeb416-f035-406e-8ad7-7d9bec4cc824\"'
-
+    
     //The options directive allows configuring Pipeline-specific options from within the Pipeline itself.
     //Pipeline provides a number of these options, such as buildDiscarder, but they may also be provided by
     //plugins, such as timestamps. Ex: retry on failure
