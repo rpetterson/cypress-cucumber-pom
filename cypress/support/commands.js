@@ -26,4 +26,4 @@
 
 // cypress/support/commands.js
 
-import 'cypress-axe'
+//import 'cypress-axe'
