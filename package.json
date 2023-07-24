@@ -9,10 +9,10 @@
     "cypress:execution": "cypress run --spec cypress/e2e/features/* --browser chrome --headed --reporter mocha-allure-reporter",
     "cypressDashoard:execution": "cypress run --spec cypress/e2e/features/* --browser chrome --headed --record --key d5eeb416-f035-406e-8ad7-7d9bec4cc824",
     "cypress-dashboard-parallel": "cypress run --record --key a25d4066-9b7c-4e5f-b900-222152bb57b2 --parallel --ci-build-id $BUILD_NUMBER --spec cypress/e2e/features/* --browser chrome",
-    "cypress-dashboard-parallel-no-push": "cypress run --record --key a25d4066-9b7c-4e5f-b900-222152bb57b2 --parallel ",
+    "cypress-dashboard-parallel-no-push": "cypress run --record --key d5eeb416-f035-406e-8ad7-7d9bec4cc824 --parallel --spec cypress/e2e/features/* --browser chrome",
     "cy:run": "cypress run",
     "cy:parallel": "cypress-parallel -s cy:run -t 5 -d 'cypress/e2e/features/*' -a '\"--record --key d5eeb416-f035-406e-8ad7-7d9bec4cc824\"'",
-    "cy:parallel2": "cypress-parallel -s cy:run -t 5 cypress/e2e/features/* --record --key d5eeb416-f035-406e-8ad7-7d9bec4cc824",
+    "cy:parallel2": "cypress-parallel -s cy:run -t 5 -d cypress/e2e/features/* -a --record --key d5eeb416-f035-406e-8ad7-7d9bec4cc824",
     "cypress:execution-tags": "cypress run --env tags=@mobile",
     "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report",
     "test:allure": "npm run cy:clientLogin && npm run report:allure"
