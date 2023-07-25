@@ -17,6 +17,7 @@
 import './commands'
 import '@shelex/cypress-allure-plugin';
 import "cypress-real-events/support";
+import "cypress-plugin-api";
 
 Cypress.on('uncaught:exception', (err, runnable) => {
     console.log(err);

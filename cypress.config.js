@@ -28,6 +28,9 @@ module.exports = defineConfig({
     chromeWebSecurity: false,
     env: {
       allureReuseAfterSpec: true,
+      snapshotOnly: true,
+      requestMode: true,
+
     },
     projectId: "wd92dz",
     projectId: "9yaff9",
@@ -36,4 +39,6 @@ module.exports = defineConfig({
     "viewportWidth": 1920,
     "viewportHeight": 1080
   },
+  
 });
+

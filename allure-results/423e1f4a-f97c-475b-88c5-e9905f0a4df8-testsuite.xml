@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1690219981472' stop='1690219986822'>
+    <name>Product page</name>
+    <title>Product page</title>
+    <test-cases>
+        <test-case start='1690219981494' status='failed' stop='1690219986812'>
+            <name>User selects most expensive product and adds to cart</name>
+            <title>User selects most expensive product and adds to cart</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: expected '&lt;span.shopping_cart_badge>' to contain '2'</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: expected '&lt;span.shopping_cart_badge>' to contain '2'
+                    at ProductsPage.cartUpdated (https://www.saucedemo.com/__cypress/tests?p=cypress\e2e\features\products.feature:14221:57)
+                    at Context.eval (https://www.saucedemo.com/__cypress/tests?p=cypress\e2e\features\products.feature:14239:22)
+                    at Registry.runStepDefininition (https://www.saucedemo.com/__cypress/tests?p=cypress\e2e\features\products.feature:7991:48)
+                    at Object.fn (https://www.saucedemo.com/__cypress/tests?p=cypress\e2e\features\products.feature:13519:43)
+                    at runStepWithLogGroup (https://www.saucedemo.com/__cypress/tests?p=cypress\e2e\features\products.feature:13153:29)
+                    at Context.eval (https://www.saucedemo.com/__cypress/tests?p=cypress\e2e\features\products.feature:13515:62)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
