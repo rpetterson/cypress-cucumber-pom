@@ -1,5 +1,1 @@
-<<<<<<< Updated upstream
-[{"name":"Jenkins","type":"jenkins","url":"http://localhost:8080/","buildOrder":29,"buildName":"CypressAutomation #29","buildUrl":"http://localhost:8080/job/CypressAutomation/29/","reportName":"AllureReport","reportUrl":"http://localhost:8080/job/CypressAutomation/29/allure"}]
-=======
-[{"name":"Jenkins","type":"jenkins","url":"http://localhost:8080/","buildOrder":30,"buildName":"CypressAutomation #30","buildUrl":"http://localhost:8080/job/CypressAutomation/30/","reportName":"AllureReport","reportUrl":"http://localhost:8080/job/CypressAutomation/30/allure"}]
->>>>>>> Stashed changes
+[]

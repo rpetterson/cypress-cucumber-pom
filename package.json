@@ -12,7 +12,9 @@
     "cypress-dashboard-parallel-no-push": "cypress run --record --key a25d4066-9b7c-4e5f-b900-222152bb57b2 --parallel ",
     "cypress:execution-tags": "cypress run --env tags=@mobile",
     "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report",
-    "test:allure": "npm run cy:clientLogin && npm run report:allure"
+    "test:allure": "npm run cy:clientLogin && npm run report:allure",
+    "allure": "allure",
+    "audit": "npm audit"
   },
   "keywords": [
     "cypress"
