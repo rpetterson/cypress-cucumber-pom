@@ -5,10 +5,6 @@ def COLOR_MAP = [
     'FAILURE': 'danger',
 ]
 
-def getBuildUser() {
-    return currentBuild.rawBuild.getCause(Cause.UserIdCause).getUserId()
-}
-
 pipeline {
     agent any
     
@@ -29,8 +25,6 @@ pipeline {
         stage('Build'){
             steps {
                 echo "Building the application"
-                bat "npm install"
-                bat "npm run %report:allure%"
             }
         }
         
@@ -51,7 +45,7 @@ pipeline {
     post {
         always {
             script {
-                BUILD_USER = getBuildUser()
+                BUILD_USER = currentBuild.buildCauses[0]?.userId ?: 'Anonymous'
             }
             
             slackSend channel: '#jenkins-example',
