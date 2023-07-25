@@ -29,6 +29,8 @@ pipeline {
         stage('Build'){
             steps {
                 echo "Building the application"
+                bat "npm install"
+                bat "npm run %report:allure%"
             }
         }
         
