@@ -1,4 +1,5 @@
 Feature: API testing
+    
     I want to ensure that the correct products are returned from my search
 
     Scenario: Monitors within the price range of £100 to £150 are displayed

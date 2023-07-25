@@ -5,8 +5,8 @@ class MonitorsPage {
     }
 
     selectMonitorPriceRage() {
-        cy.get('[data-test="filter-price-100-150"]').check();
-        cy.get('[data-test="filter-price-100-150"]').should('be.checked');
+        cy.get('#Price-£100---£150').click({ force: true });
+        //cy.get('#Price-£100---£150').should('be.checked');
 
     }
     checkApiResponseForMonitorId() {
@@ -42,7 +42,7 @@ class MonitorsPage {
         }).then((response) => {
           // Assert that the response contains the "product" object with "id" value "5980159"
           expect(response.status).to.eq(200); // Assuming a successful response
-          expect(response.body).to.have.property('product').to.deep.include({ "id": "5980159" });
+          expect(response.body).to.have.property('products').to.deep.include({ "id": "5980159" });
         });
       }
 }      

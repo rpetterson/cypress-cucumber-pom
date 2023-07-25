@@ -10,9 +10,10 @@ import {
   });
 
   When("I check the price box for £100-£150", () => {
+    monitorsPage.selectMonitorPriceRage();
 
   });
 
   Then("I should see within the returned results Samsung LS24AM506NUXXU", () =>{
-
+    monitorsPage.checkApiResponseForMonitorId();
   });
