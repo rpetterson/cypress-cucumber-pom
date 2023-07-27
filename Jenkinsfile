@@ -1,6 +1,24 @@
+def COLOR_MAP = [
+    'SUCCESS': 'good', 
+    'FAILURE': 'danger',
+]
+
+def getBuildUser() {
+    return currentBuild.rawBuild.getCause(Cause.UserIdCause).getUserId()
+}
+
 pipeline {
     agent any
-    // rest of your pipeline configuration...
+     environment {
+        BUILD_USER = ''
+    }
+    parameters {
+        string(name: 'SPEC', defaultValue: "cypress/e2e/features/*", description: 'Eg: cypress/e2e/features/*')
+        choice(name: 'BROWSER', choices: ['chrome', 'edge', 'firefox'], description: 'Pick the web browser you want to use to run your scripts')
+    }
+    options {
+        ansiColor('xterm')
+    }
 
     stages {
         stage('Build'){
