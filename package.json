@@ -15,7 +15,13 @@
     "cy:parallel2": "cypress-parallel -s cy:run -t 5 -d cypress/e2e/features/* -a --record --key d5eeb416-f035-406e-8ad7-7d9bec4cc824",
     "cypress:execution-tags": "cypress run --env tags=@mobile",
     "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report",
-    "test:allure": "npm run cy:clientLogin && npm run report:allure"
+    "test:allure": "npm run cy:clientLogin && npm run report:allure",
+      "test": "cypress run",
+      "posttest": "npm run report:merge && npm run report:mocha",
+      "report:merge": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mocha.json",
+      "report:mocha": "marge cypress/reports/mocha.json -f report -o cypress/reports"
+    
+    
   },
   "keywords": [
     "cypress"
@@ -24,17 +30,19 @@
   "license": "ISC",
   "devDependencies": {
     "@4tw/cypress-drag-drop": "^2.2.3",
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.1",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
     "@faker-js/faker": "^7.6.0",
     "@shelex/cypress-allure-plugin": "^2.40.0",
     "@testing-library/cypress": "^9.0.0",
     "cypress": "^12.2.0",
+    "cypress-parallel": "^0.13.0",
     "cypress-real-events": "^1.7.6",
     "esbuild": "^0.16.4",
     "mocha-allure-reporter": "^1.4.0",
-    "multiple-cucumber-html-reporter": "^3.0.1",
-    "@badeball/cypress-cucumber-preprocessor": "^18.0.1",
-    "cypress-parallel": "^0.13.0"
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "multiple-cucumber-html-reporter": "^3.0.1"
   }
-  
 }

@@ -29,7 +29,16 @@ module.exports = defineConfig({
     env: {
       allureReuseAfterSpec: true,
     },
- 
+  
+    "reporter": "mochawesome",
+    "reporterOptions": {
+      "reportDir": "cypress/reports/mocha",
+      "quiet": true,
+      "overwrite": false,
+      "html": false,
+      "json": true
+    }, 
+    
     projectId: "n21t31",
     
     "viewportWidth": 1920,
