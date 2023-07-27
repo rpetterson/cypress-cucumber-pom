@@ -24,7 +24,7 @@ buyMostExpensiveProduct(){
   }
 
   cartUpdated() {
-    cy.get('#shopping_cart_container > a > span').should('contain', '2');
+    cy.get('#shopping_cart_container > a > span').should('contain', '1');
   }
   
 }  
