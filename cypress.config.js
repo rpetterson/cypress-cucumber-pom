@@ -38,10 +38,22 @@ module.exports = defineConfig({
       "html": false,
       "json": true
     }, 
+
+    
     
     projectId: "n21t31",
     
     "viewportWidth": 1920,
     "viewportHeight": 1080
+  },
+  
+  publishHTML: {
+    allowMissing: false,
+    alwaysLinkToLastBuild: true,
+    keepAll: true,
+    reportDir: 'cypress/reports', // Adjust the directory according to your report location
+    reportFiles: 'myreport.html', // Adjust the filename for the generated report
+    reportName: 'My Reports', // Provide a suitable name for the report
+    reportTitles: 'The Report', // Adjust the report titles as needed
   },
 });
