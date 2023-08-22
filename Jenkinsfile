@@ -32,7 +32,7 @@ pipeline {
         stage('Testing') {
             steps {
                 bat "npm i"
-                bat "npx cypress run --browser ${BROWSER} --spec \"${SPEC}\" --parallel --record --key d5eeb416-f035-406e-8ad7-7d9bec4cc824"
+                bat "npx cypress run --browser ${BROWSER} --spec \"${SPEC}\" --parallel --record --key 0e63fdc3-bb02-4598-affe-2611ed06999d"
             }
         }
 
